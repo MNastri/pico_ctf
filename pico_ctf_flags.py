@@ -17,5 +17,14 @@ flags = {
         'flag': 'picoCTF{b1scu1ts_4nd_gr4vy_30e77291}',
         'solution': 'run "./004_warm -h" in a linux terminal '
                     'after enabling execution of the file with the command "chmod +x warm"'
+    },
+    'information':{
+        'flag': 'picoCTF{the_m3tadata_1s_modified}',
+        'solution': 'since cat is also a command in linux, '
+                    'tried converting the file to .txt and then using said command in the linux terminal.'
+                    'I also used "| less" to show the contents page by page since I noticed that the file was big.'
+                    'The first page contained some xml data and two promising strings.'
+                    'Both of them failed so I tried decoding them using the code from previous challenges'
+                    'Decoding the second string gave me the correct picoCTF flag'
     }
 }
